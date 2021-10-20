@@ -12,32 +12,7 @@ router.get("/", (req, res) => {
   res.send("Home page from Router");
 });
 
-// to register on postman, the post api
-// router.post ("/register", (req, res) =>{
-//    const {name, email, phone, work, password} = req.body;
 
-//    if(!name || !email || !phone || !work || !password) {
-//        return res.status(422).json({error: "Plz fill the information properly"})
-//    }
-
-//    // findOne method return promises and use to match the data in object
-//    User.findOne({email: email})
-//    .then((userExist) => {
-//        if(userExist) {
-//            return res.status(422).json({ error: "Email already exist"})
-//        }
-
-//        const user = new User({name, email, phone, work, password});
-
-//        user.save().then(() => {
-//            res.status(201).json({message: "user registered successfully"});
-//             res.json(req.body)
-//        }).catch((error) => {
-//            console.log(error)
-//        })
-//    })
-
-// })
 
 // Post API using Async Await
 
